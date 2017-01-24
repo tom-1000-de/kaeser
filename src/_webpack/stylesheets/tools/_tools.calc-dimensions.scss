@@ -1,0 +1,15 @@
+@function calc-dimensions($width) {
+  @return returnValue;
+}
+
+@mixin calc-dimensions($imageWidth, $imageHeight, $width: 0, $height: 0) {
+  @if $width > 0 {
+    $ratio: $imageHeight / $imageWidth;
+    width: $width;
+    height: $width * $ratio;
+  } @else {
+    $ratio: $imageWidth / $imageHeight;
+    width: $height * $ratio;
+    height: $height;
+  }
+}

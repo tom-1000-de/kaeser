@@ -1,0 +1,26 @@
+$aligns: left center right !default;
+
+@mixin aligns($aligns, $breakpoint: null) {
+
+  @each $align in $aligns {
+
+    // Build a class in the format `.u-align-left[@<breakpoint>]`.
+    .u-align-#{$align}#{$breakpoint} {
+      text-align: $align !important;
+    }
+
+  }
+
+}
+
+@if (variable-exists(mq-breakpoints)) {
+
+  @each $inuit-bp-name, $inuit-bp-value in $mq-breakpoints {
+
+    @include mq($from: $inuit-bp-name) {
+      @include aligns($aligns, #{$inuit-widths-breakpoint-separator}#{$inuit-bp-name});
+    }
+
+  }
+
+}

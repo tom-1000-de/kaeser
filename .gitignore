@@ -1,0 +1,6 @@
+dist
+.sass-cache
+.jekyll-metadata
+node_modules/
+src/assets/app.js
+src/assets/style.css
