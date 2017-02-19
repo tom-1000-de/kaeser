@@ -1,2 +1,2 @@
-web: npm run serve:jekyll
-client: npm run serve:webpack
+web: yarn run serve:jekyll
+client: yarn run serve:webpack
