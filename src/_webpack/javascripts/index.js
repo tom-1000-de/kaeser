@@ -1,7 +1,11 @@
-class Jekyll {
-  constructor() {
-    console.log(`You are running Jekyll with webpack in ${process.env.NODE_ENV}`)
-  }
-}
+import ScrollReveal from 'scrollreveal'
 
-new Jekyll()
+
+const sr = ScrollReveal()
+
+
+
+
+
+sr.reveal('.js-bottom-in', { origin: 'bottom', scale: 1 })
+sr.reveal('.js-top-in', { origin: 'top', distance: '50px', scale: 1 })

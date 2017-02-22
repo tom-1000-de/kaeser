@@ -13,6 +13,8 @@ $aligns: left center right !default;
 
 }
 
+@include aligns($aligns);
+
 @if (variable-exists(mq-breakpoints)) {
 
   @each $inuit-bp-name, $inuit-bp-value in $mq-breakpoints {

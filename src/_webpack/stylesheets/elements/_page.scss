@@ -2,10 +2,27 @@
 // #PAGE
 // =============================================================================
 
+$small-font-size: 12px;
+$small-line-height: 20px;
+
 html {
   font-family: $global-font-family;
+  font-size: ($small-font-size / 16px) * 1em; /* [1] */
+  line-height: $small-line-height / $small-font-size; /* [1] */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include mq(desktop) {
+    font-size: ($inuit-global-font-size / 16px) * 1em; /* [1] */
+    line-height: $inuit-global-line-height / $inuit-global-font-size; /* [1] */
+  }
 }
 
 body {
   background-color: $global-bg-color;
+  color: $global-text-color;
+}
+
+strong {
+  font-weight: bold;
 }

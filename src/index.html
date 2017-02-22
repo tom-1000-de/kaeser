@@ -2,21 +2,121 @@
 layout: default
 ---
 
-<div class="o-wrapper">
-  <div class="remove-me">
-    <div class="remove-me__header">
-      <div class="remove-me__logo"></div>
+<header class="o-slide c-masthead">
+  <div class="o-slide__container">
+    <div class="c-masthead__content">
+      <h1 class="c-masthead__title">
+        Seiten Titel
+      </h1>
+      <h2 class="c-masthead__subtitle">
+        Dies ist der Untertitel für diese Seite
+      </h2>
     </div>
-    <div class="remove-me__body">
-      <div class="o-layout o-layout--middle">
-        <div class="o-layout__item u-3/12@tablet u-3/12@desktop">
-          <img src="{{ site.baseurl }}assets/images/hiasinho.png" />
-        </div>
+  </div>
+  <div class="c-scroll"></div>
+</header>
 
-        <div class="o-layout__item u-9/12@tablet u-9/12@desktop u-align-left@tablet">
-          <h1>Congrats! You just started your first project with Jekyll and Webpack</h1>
+<section class="c-section t-dark">
+  <div class="c-section__heading">
+    <h2 class="c-section__title js-top-in">
+      The Who
+    </h2>
+  </div>
+
+  <div class="o-wrapper">
+    <div class="c-section__heading o-layout o-layout--middle">
+      <div class="o-layout__item u-4/12@tablet">
+        <div class="c-circle u-margin-bottom js-bottom-in">
+          <div class="c-circle__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolorem facere rerum quia voluptatem, saepe totam, laborum perferendis eos, inventore aspernatur quaerat suscipit? Saepe, quam, placeat? Voluptas, esse perspiciatis temporibus.
+          </div>
+        </div>
+      </div>
+
+      <div class="o-layout__item u-4/12@tablet">
+        <div class="c-circle u-margin-bottom js-bottom-in">
+          <div class="c-circle__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quibusdam nihil a rerum saepe quas assumenda fugit id mollitia, vel quod dolores voluptatum culpa dolorem odit, fuga, ea voluptate. Ut?
+          </div>
+        </div>
+      </div>
+
+      <div class="o-layout__item u-4/12@tablet">
+        <div class="c-circle u-margin-bottom js-bottom-in">
+          <div class="c-circle__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis consectetur porro culpa iste cum eveniet similique, nemo minima neque, deserunt, sint saepe aut voluptates rem eius dolor nihil reprehenderit ipsam.
+          </div>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<div class="c-section t-dark">
+  <div class="c-section__heading o-layout o-layout--middle">
+    <div class="o-layout__item">
+      <h2 class="c-section__title js-bottom-in">
+        Titel
+      </h2>
+    </div>
+
+    <div class="o-layout__item u-8/12@tablet u-7/12@desktop">
+      <p class="c-section__subtitle js-bottom-in">
+        Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Ratione consectetur provident praesentium aperiam repellat libero ea nobis minus, magni ipsam alias tenetur, <strong>explicabo possimus</strong> amet, unde dolorem iusto autem. Obcaecati.
+      </p>
+    </div>
+  </div>
+
+  <div class="o-layout o-layout--middle">
+    {% for member in site.data.projects %}
+      <div class="o-layout__item u-6/12@tablet u-4/12@desktop">
+        <a class="c-project js-bottom-in" href="{{ member.url }}" target="_blank">
+          <div class="c-project__image" style="background-image: url('{{ site.baseurl }}assets/images/{{ member.image }}')"></div>
+          <h2 class="c-project__title">
+            {{ member.title }}
+          </h2>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
 </div>
+
+<section class="c-section t-light">
+  <div class="c-section__heading">
+    <h2 class="c-section__title js-top-in">
+      Newsletter
+    </h2>
+  </div>
+
+  <div class="o-layout o-layout--middle o-layout--center">
+    <div class="o-layout__item u-10/12@tablet u-8/12@desktop">
+      <form
+        action="//hiasinho.us4.list-manage.com/subscribe/post?u=de54ba8bdc45ee5a5ce01c56f&amp;id=5fad95f042"
+        method="post"
+        name="mc-embedded-subscribe-form"
+        class="validate"
+        target="_blank"
+      >
+
+        <label for="mce-EMAIL">E-Mail Adresse  <i class="fa fa-asterisk"></i></label>
+        <input type="email" value="" name="EMAIL" id="mce-EMAIL">
+
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_de54ba8bdc45ee5a5ce01c56f_5fad95f042" tabindex="-1" value="">
+        </div>
+
+        <input type="submit" value="Anmelden" name="subscribe" class="c-btn c-btn--primary">
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="c-section t-light">
+  <div class="o-wrapper u-align-center">
+    <div class="c-social-list">
+      <a href="#" class="c-social-list__item"><i class="fa fa-facebook-official fa-2x"></i></a>
+      <a href="#" class="c-social-list__item"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="#" class="c-social-list__item"><i class="fa fa-instagram fa-2x"></i></a>
+    </div>
+  </div>
+</section>

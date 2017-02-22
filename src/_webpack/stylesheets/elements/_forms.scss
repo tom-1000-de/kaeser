@@ -1,0 +1,102 @@
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: $inuit-global-spacing-unit-tiny / 2;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: $inuit-global-spacing-unit-tiny / 2;
+
+  &.required {
+    &:after {
+      content: '*';
+    }
+  }
+}
+
+input,
+select {
+  display: block;
+  font-family: $global-font-family;
+  font-size: $inuit-global-font-size;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+textarea {
+  background-color: white;
+  border: 2px solid $oc-gray-5;
+  border-radius: $global-radius;
+  // box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  margin-bottom: $inuit-global-spacing-unit-small;
+  padding: $inuit-global-spacing-unit-small;
+  transition: border-color $global-duration $global-timing;
+  width: 100%;
+
+  &:hover {
+    border-color: shade($oc-gray-5, 20%);
+  }
+
+  &:focus {
+    border-color: $global-action-color;
+    // box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($global-bg-color, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: 2px solid $oc-gray-5;
+    }
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="search"] {
+  appearance: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $inuit-global-spacing-unit-tiny / 2;
+}
+
+[type="file"] {
+  margin-bottom: $inuit-global-spacing-unit-tiny;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $inuit-global-spacing-unit;
+  max-width: 100%;
+  width: auto;
+}

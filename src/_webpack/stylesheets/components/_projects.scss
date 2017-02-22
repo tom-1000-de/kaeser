@@ -1,0 +1,53 @@
+.c-projects {
+
+}
+
+  .c-project__item {
+
+  }
+
+
+.c-project {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: $inuit-global-spacing-unit;
+  box-shadow: 0 1px 0 rgba(30, 30, 32, 0.2) inset,
+              0 8px 16px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 150ms ease-out;
+
+  &:hover {
+    box-shadow: 0 1px 0 rgba(30, 30, 32, 0.2) inset,
+                0 13px 16px rgba(0, 0, 0, 0.5);
+
+    transform: scale(1.02) !important;
+  }
+}
+
+  .c-project__image {
+    border-radius: $global-radius;
+    display: block;
+    position: relative;
+    height: 120px;
+    padding: calc(32px/2) 32px;
+    padding-bottom: 66%;
+    background-color: $global-primary-color;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: hard-light;
+    outline: none;
+  }
+
+  .c-project__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 $inuit-global-spacing-unit;
+  }

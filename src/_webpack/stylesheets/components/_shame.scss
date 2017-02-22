@@ -1,0 +1,40 @@
+.c-circle {
+  position: relative;
+  border-radius: 50%;
+  background-color: $global-primary-color;
+  width: 100%;
+  overflow: hidden;
+
+  &:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+  .c-circle__content {
+    padding: 0 14.86%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-height: 72%;
+    overflow: hidden;
+  }
+
+
+.c-scroll {
+  @include calc-dimensions(50px, 91px, 24px);
+  background-image: url('~images/scroll_mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  bottom: $inuit-global-spacing-unit;
+  transform: translateX(-50%);
+
+  @include mq(tablet) {
+    @include calc-dimensions(41px, 122px, 24px);
+    background-image: url('~images/scroll_mouse.svg');
+  }
+}

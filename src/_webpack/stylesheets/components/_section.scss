@@ -1,0 +1,23 @@
+.c-section {
+  padding: $inuit-global-spacing-unit-large $inuit-global-spacing-unit;
+}
+
+  .c-section__heading {
+    // color: white;
+    text-align: center;
+    margin-bottom: $inuit-global-spacing-unit-large;
+  }
+
+  .c-section__title {
+    @include inuit-font-size(80px);
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .c-section__subtitle {
+    font-weight: 300;
+    @include inuit-font-size($inuit-font-size-h3);
+    line-height: normal;
+    margin: 0;
+  }

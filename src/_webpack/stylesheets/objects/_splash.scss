@@ -1,0 +1,134 @@
+.o-splash {
+  height: 100vh;
+  min-height: 420px;
+  padding: 0 $inuit-global-spacing-unit;
+  overflow: hidden;
+  color: #fff;
+  pointer-events: none;
+
+  &__container {
+    position: relative;
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: $inuit-wrapper-width;
+    display: flex;
+    height: 101%; /* prevents awkward pixel below iOS devices */
+    align-items: flex-end;
+    justify-content: flex-end;
+    @include inuit-clearfix();
+  }
+
+  &__title,
+  &__silhouette {
+    will-change: transform;
+  }
+  &__title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 250;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      position: relative;
+      z-index: 260;
+      margin: 0;
+      line-height: 1;
+      font-size: 3rem;
+      font-weight: 500;
+    }
+  }
+}
+
+//   &__bg {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: $c-primary;
+//     background-size: auto 100%;
+//     animation: bgFrames 800ms steps(8) infinite;
+//     .mobile-device & {
+//       position: absolute;
+//       width: calc(100% + 2 * $column-gutter);
+//       left: calc(-$column-gutter);
+//     }
+//   }
+//   &__silhouette {
+//     position: fixed;
+//     top: 2.5%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     transform-origin: 0 50%;
+//     z-index: 200;
+//     color: #fff;
+//     height: 105%;
+//     min-height: 336px;
+//     width: 100%;
+//     opacity: 0;
+//     transition: 500ms ease-out opacity;
+//     &.is-hidden {
+//       opacity: 0;
+//     }
+//     &.lazyloaded {
+//       opacity: 1;
+//     }
+//     .no-js & {
+//       animation: fadeIn 2s forwards 2s;
+//     }
+//     .mobile-device & {
+//       position: absolute;
+//       top: initial;
+//       bottom: 0;
+//       left: 0;
+//       height: 85%;
+//       transform: none;
+//     }
+
+//     svg {
+//       position: absolute;
+//       right: 0;
+//       z-index: 210;
+//       display: block;
+//       height: 100%;
+//       width: auto;
+//     }
+//   }
+// }
+
+@include mq(tablet) {
+  .o-splash {
+    &__container {
+      justify-content: center;
+      height: 100%;
+    }
+  }
+}
+
+// @media screen and (min-width: $mobile-width) {
+//   .splash {
+//     padding: 0 calc($column-gutter*2);
+//     &__title {
+//       h1 {
+//         font-size: 4.5rem;
+//       }
+//     }
+//     &__arrow {
+//       position: fixed;
+//       bottom: 16px;
+//       left: 50%;
+//       z-index: 250;
+//       transform: translateX(-50%);
+//       width: 36px;
+//       height: 13px;
+//       padding: 12px;
+//       background-image: url('../images/svg/icon-arrow-down.svg');
+//       background-size: 100% 100%;
+//       pointer-events: initial;
+//       animation: hintDown 2s ease-out infinite;
+//     }
+//   }
+// }

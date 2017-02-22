@@ -4,13 +4,21 @@
 // The global settings file contains any project-wide variables; things that
 // need to be made available to the entire codebase.
 
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,500,700');
+
 $global-font-system: -apple-system, BlinkMacSystemFont,
 				     "Segoe UI", "Roboto", "Oxygen",
 				     "Ubuntu", "Cantarell", "Fira Sans",
 				     "Droid Sans", "Helvetica Neue", sans-serif;
 
-$global-font-family: $global-font-system;
+$global-font-family: "Heebo", "Helvetica Neue", Helvetica, sans-serif;
+$global-font-weight-light: 300;
+$global-font-weight-normal: 400;
+$global-font-weight-bold: 500;
 
 // Standardise some UI treatments.
-$global-radius: 3px !default;
-$global-transition: all 300ms ease-in-out !default;
+$global-radius: 4px !default;
+$global-duration: 300ms;
+$global-timing: ease-in-out;
+
+$global-transition: all $global-duration $global-timing !default;

@@ -1,0 +1,13 @@
+.c-social-list {
+
+}
+
+  .c-social-list__item {
+    color: $oc-gray-6;
+    padding: 0 $inuit-global-spacing-unit-small;
+    transition: $global-transition;
+
+    &:hover {
+      color: $global-text-color;
+    }
+  }

@@ -1,0 +1,11 @@
+.o-slide {
+  width: 100%;
+  min-height: 100vh;
+}
+
+  .o-slide__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

@@ -6,10 +6,23 @@ $color-gray:       $oc-gray-5;
 $color-gray-dark:  $oc-gray-9;
 $color-gray-light: $oc-gray-1;
 
+$color-red:       $oc-red-5;
+$color-red-dark:  $oc-red-9;
+$color-red-light: $oc-red-0;
+
+$color-yellow:       $oc-yellow-5;
+$color-yellow-dark:  $oc-yellow-9;
+$color-yellow-light: $oc-yellow-0;
+
 $color-green:       $oc-green-5;
 $color-green-light: $oc-green-0;
 
 // Global Colors
 // =============================================================================
 
-$global-bg-color: $color-green-light;
+$global-primary-color: $color-red-dark;
+$global-bg-color: #1E1E20;
+$global-bg-color: $color-gray-light;
+$global-text-color: $oc-gray-9;
+$global-action-color: $color-red-dark;
+$global-border-color: $oc-gray-9;
