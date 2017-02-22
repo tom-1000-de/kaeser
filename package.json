@@ -8,7 +8,7 @@
     "build": "npm run build:webpack && npm run build:jekyll",
     "build:jekyll": "bundle exec jekyll build",
     "build:webpack": "NODE_ENV=production webpack -p",
-    "serve:jekyll": "bundle exec jekyll serve --watch --config '_config.yml,_config_dev.yml'",
+    "serve:jekyll": "bundle exec jekyll serve --safe --watch --config '_config.yml,_config_dev.yml'",
     "serve:webpack": "./node_modules/.bin/webpack-dev-server --inline --progress --colors"
   },
   "author": "",
