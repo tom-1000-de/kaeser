@@ -1,8 +1,15 @@
-///* ========================================================================
-//   #GLOBAL
-//   ======================================================================== */
+// =============================================================================
+// #GLOBAL
+// =============================================================================
 // The global settings file contains any project-wide variables; things that
 // need to be made available to the entire codebase.
+
+$global-font-system: -apple-system, BlinkMacSystemFont,
+				     "Segoe UI", "Roboto", "Oxygen",
+				     "Ubuntu", "Cantarell", "Fira Sans",
+				     "Droid Sans", "Helvetica Neue", sans-serif;
+
+$global-font-family: $global-font-system;
 
 // Standardise some UI treatments.
 $global-radius: 3px !default;

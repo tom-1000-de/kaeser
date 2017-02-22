@@ -55,6 +55,10 @@ module.exports = {
 
   plugins: [
     new webpack.EnvironmentPlugin(['NODE_ENV']),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
     new ExtractTextPlugin('style.css', {
       allChunks: true,
     }),

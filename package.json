@@ -1,5 +1,5 @@
 {
-  "name": "announceit-marketing",
+  "name": "jekyll-webpack",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "file-loader": "^0.9.0",
     "inuitcss": "git://github.com/inuitcss/inuitcss.git#develop",
     "node-sass": "^4.3.0",
+    "open-color": "^1.4.2",
     "postcss-loader": "^1.2.2",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
