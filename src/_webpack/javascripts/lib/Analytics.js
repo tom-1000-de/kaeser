@@ -22,7 +22,6 @@ export default class Analytics {
     if (label != null) eventData['eventLabel'] = label
     if (value != null) eventData['eventValue'] = value
 
-    console.log(eventData)
     ga('send', eventData)
   }
 
@@ -33,7 +32,11 @@ export default class Analytics {
     })
 
     $('.js-track-click').on('click', function(ev) {
-      Analytics.track('Link', 'click', this.href)
+      if ($(this).data('trackLabel')) {
+        Analytics.track('Link', 'click', $(this).data('trackLabel'))
+      } else {
+        Analytics.track('Link', 'click', this.href)
+      }
     })
 
     $(window).scroll(function() {

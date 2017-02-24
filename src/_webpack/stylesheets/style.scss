@@ -70,11 +70,13 @@
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-@import "~inuitcss/components/example.components.buttons";
+@import "components/buttons";
 @import "components/masthead";
+@import "components/nav";
 @import "components/section";
 @import "components/projects";
 @import "components/social-list";
+@import "components/modal";
 @import "components/shame";
 
 
@@ -102,3 +104,4 @@ $inuit-fractions: 1 12;
 @import "~inuitcss/utilities/utilities.print";
 @import "~inuitcss/utilities/utilities.hide";
 @import "utilities/aligns";
+@import "utilities/paint";

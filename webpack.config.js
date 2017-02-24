@@ -57,7 +57,8 @@ module.exports = {
     new webpack.EnvironmentPlugin(['NODE_ENV']),
     new webpack.ProvidePlugin({
       $: "jquery",
-      jQuery: "jquery"
+      jQuery: "jquery",
+      scroll: 'imports?this=>global!exports?global.scroll!smoothscroll-polyfill',
     }),
     new ExtractTextPlugin('style.css', {
       allChunks: true,

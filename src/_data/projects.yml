@@ -1,6 +1,17 @@
-- title: Ein Projekt
-  image: p1.jpg
+- title: Jugendparlament entwickelt
+  image: jugendparlament_paf.jpg
   url: http://echtland.de
+  body: |
+    <p>
+    <strong>Ziele:</strong><br/>
+    Verbindliche Mitbestimmung  von Jugendlichen auf Gemeindeebene.
+    Jugendpolitische Bildung
+    </p>
+
+    <p>
+    <strong>Aktion:</strong><br/>
+    Die bayerischen Gemeindeordnung sieht keine Verpflichtung zur politischen Beteiligung von Jugendlichen vor. Auf unsere Anregung hin und nach unserem Konzept organisierte die Stadt Pfaffenhofen Wahlen von Jugendlichen ab 14 bis 26 Jahren und stattete das neue Gremium mit eigenem Budget und Räumen aus. Das Jugendparlament wird alle zwei Jahre neue gewählt und existiert in dieser Form seit 1998.
+    </p>
 - title: Anderes Projekt
   image: p2.jpg
   url: http://echtland.de

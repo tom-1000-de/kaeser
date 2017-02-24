@@ -1,23 +1,32 @@
 .c-section {
-  padding: $inuit-global-spacing-unit-large $inuit-global-spacing-unit;
+  padding: $inuit-global-spacing-unit $inuit-global-spacing-unit;
+
+
+  @include mq(tablet) {
+    padding: $inuit-global-spacing-unit;
+    // padding-bottom: $inuit-global-spacing-unit-tiny;
+  }
 }
 
   .c-section__heading {
     // color: white;
     text-align: center;
-    margin-bottom: $inuit-global-spacing-unit-large;
+    margin-bottom: $inuit-global-spacing-unit;
   }
 
   .c-section__title {
-    @include inuit-font-size(80px);
-    letter-spacing: .25rem;
+    @include inuit-font-size(56px);
     text-transform: uppercase;
     margin: 0;
+
+    @include mq(tablet) {
+      letter-spacing: .25rem;
+    }
   }
 
   .c-section__subtitle {
     font-weight: 300;
-    @include inuit-font-size($inuit-font-size-h3);
+    @include inuit-font-size($inuit-font-size-h5);
     line-height: normal;
     margin: 0;
   }

@@ -1,0 +1,34 @@
+.c-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color-gray-dark, 0.9);
+  z-index: 9999;
+  color: white;
+}
+
+  .c-modal__close {
+    position: absolute;
+    top: $inuit-global-spacing-unit;
+    right: $inuit-global-spacing-unit;
+    line-height: 0.5;
+    font-size: 48px;
+    cursor: pointer;
+    z-index: 10
+  }
+
+  .c-modal__body {
+    position: relative;
+    @include inuit-clearfix();
+    padding-right: $inuit-global-spacing-unit;
+    padding-left:  $inuit-global-spacing-unit;
+    padding-top: $inuit-global-spacing-unit-large;
+    padding-bottom: $inuit-global-spacing-unit-large;
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: $inuit-wrapper-width;
+    overflow: auto;
+  }

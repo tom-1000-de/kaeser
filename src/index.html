@@ -2,121 +2,165 @@
 layout: default
 ---
 
-<header class="o-slide c-masthead">
+<header class="o-slide c-masthead" id="start">
   <div class="o-slide__container">
     <div class="c-masthead__content">
       <h1 class="c-masthead__title">
-        Seiten Titel
+        {{ site.data.texts.cover.title }}
       </h1>
       <h2 class="c-masthead__subtitle">
-        Dies ist der Untertitel für diese Seite
+        {{ site.data.texts.cover.subtitle }}
       </h2>
     </div>
   </div>
-  <div class="c-scroll"></div>
+  <a href="#intro" class="c-scroll"></a>
 </header>
+
+<div class="c-section t-dark">
+  <div class="o-wrapperl">
+    <div class="o-layout o-layout--center">
+      <div class="o-layout__item u-10/12@tablet u-9/12@desktop u-6/12@wide">
+        <div class="c-letter animated pulse" id="intro">
+          <div class="c-letter__page">
+            <p>
+              Liebe Genossinnen,<br/>
+              Liebe Genossen,
+            </p>
+
+            <p>
+              Walter Adam aus Abensberg hat mit seiner mutigen Kandidatur zum bayerischen Landesvorsitz 2015 in Hirschaid ein deutliches Zeichen gegen die lähmende Alternativlosigkeit in der SPD gesetzt und eine Bresche für die Basis geschlagen.
+            </p>
+
+            <p>
+              Ich war begeistert von der Energie, die mit der Kandidatur von Walter plötzlich wieder zu spüren war. Wie unzählige Sozialdemokratinnen und Sozialdemokraten aus ganz Bayern folgte ich seinem Impuls, wollte den Niedergang der BayernSPD nicht akzeptieren und begann den Neuanfang mit zu organisieren.
+            </p>
+
+            <p>
+              Nun haben wir die Urwahl durchgesetzt. Jetzt schreiben alle Mitglieder die Geschichte der bayerischen Sozialdemokratie selbst!
+            </p>
+
+            <p>
+              60.000 Mitglieder in ganz Bayern, die alle dabei sind, weil sie bestehende Verhältnisse nicht einfach hinnehmen, sondern stetig zum Besseren verändern wollen. Das gilt für unsere Gesellschaft, aber auch für die SPD selbst.
+            </p>
+
+            <p>
+              Uns wer konsequent den Neuanfang fordert, der muss auch bereit sein mit anzupacken.
+            </p>
+
+            <p>
+              Ich will deshalb selbst die Alternative anbieten, die ich gefordert habe und anschieben, dass die bayerische SPD wieder werden kann, was 60.000 bayerische Sozialdemokratinnen und Sozialdemokraten verdient haben: Zu einer lebendigen Mitgliederpartei und zu einer ernstzunehmenden politischen Alternative in Bayern.
+            </p>
+
+            <p>Darum kandidiere ich.</p>
+
+            <p>
+              Markus Käser<br/>
+              #1erfür60000
+            </p>
+          </div>
+          <div class="c-letter__page"></div>
+          <div class="c-letter__page"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="c-section t-dark">
   <div class="c-section__heading">
     <h2 class="c-section__title js-top-in">
-      The Who
+      Markus Käser zum Landes&shy;vor&shy;sitzenden wählen bedeutet
     </h2>
   </div>
 
-  <div class="o-wrapper">
+  <div class="o-wrapper js-track-visible" data-track-category="Page" data-track-action="scroll" data-track-label="About">
     <div class="c-section__heading o-layout o-layout--middle">
-      <div class="o-layout__item u-4/12@tablet">
-        <div class="c-circle u-margin-bottom js-bottom-in">
-          <div class="c-circle__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolorem facere rerum quia voluptatem, saepe totam, laborum perferendis eos, inventore aspernatur quaerat suscipit? Saepe, quam, placeat? Voluptas, esse perspiciatis temporibus.
+      {% for item in site.data.imagine %}
+        <div class="o-layout__item u-4/12@tablet">
+          <div class="c-circle u-margin-bottom js-there-is-more js-bottom-in js-track-click" data-track-label="{{ item.title }}">
+            <div class="c-circle__number">{{ item.number }}</div>
+            <div class="c-circle__title">
+              {{ item.title }}
+            </div>
+          </div>
+          <div class="c-modal js-modal">
+            <div class="c-modal__close js-close">&times;</div>
+            <div class="c-modal__body">
+              <div class="o-layout o-layout--center o-layout--middle">
+                <div class="o-layout__item u-8/12@tablet u-6/12@desktop">
+                  <h2>{{ item.title }}</h2>
+                  {{ item.body }}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="o-layout__item u-4/12@tablet">
-        <div class="c-circle u-margin-bottom js-bottom-in">
-          <div class="c-circle__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quibusdam nihil a rerum saepe quas assumenda fugit id mollitia, vel quod dolores voluptatum culpa dolorem odit, fuga, ea voluptate. Ut?
-          </div>
-        </div>
-      </div>
-
-      <div class="o-layout__item u-4/12@tablet">
-        <div class="c-circle u-margin-bottom js-bottom-in">
-          <div class="c-circle__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis consectetur porro culpa iste cum eveniet similique, nemo minima neque, deserunt, sint saepe aut voluptates rem eius dolor nihil reprehenderit ipsam.
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<div class="c-section t-dark">
+<div class="c-section t-dark" id="einsatz">
   <div class="c-section__heading o-layout o-layout--middle">
     <div class="o-layout__item">
       <h2 class="c-section__title js-bottom-in">
-        Titel
+        Einsatz
       </h2>
     </div>
 
     <div class="o-layout__item u-8/12@tablet u-7/12@desktop">
       <p class="c-section__subtitle js-bottom-in">
-        Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Ratione consectetur provident praesentium aperiam repellat libero ea nobis minus, magni ipsam alias tenetur, <strong>explicabo possimus</strong> amet, unde dolorem iusto autem. Obcaecati.
+        Politik hat für mich eine ganz einfache Bedeutung: <strong>mitzuhelfen</strong>, eine gute und friedliche Gesellschaft zu <strong>organisieren</strong>, das Glück seiner <strong>Mitbürger</strong> zu erhöhen und <strong>die Welt ein bisschen besser machen</strong>.
+        <br/><br/>
+        Hier eine Auswahl von <strong>gesellschaftlichen Projekten</strong>, Initiativen und Organisationen an deren <strong>Konzeption und Durchführung</strong> ich <strong>federführend</strong> beteiligt war.
       </p>
     </div>
   </div>
 
-  <div class="o-layout o-layout--middle">
-    {% for member in site.data.projects %}
+  <div class="o-layout o-layout--middle js-track-visible" data-track-category="Page" data-track-action="scroll" data-track-label="Projects">
+    {% for project in site.data.projects %}
       <div class="o-layout__item u-6/12@tablet u-4/12@desktop">
-        <a class="c-project js-bottom-in" href="{{ member.url }}" target="_blank">
-          <div class="c-project__image" style="background-image: url('{{ site.baseurl }}assets/images/{{ member.image }}')"></div>
+        <a class="c-project js-bottom-in{% if project.body %} js-there-is-more{% endif %} js-track-click" href="{{ project.url }}" target="_blank">
+          <div class="c-project__image" style="background-image: url('{{ site.baseurl }}assets/images/{{ project.image }}')"></div>
           <h2 class="c-project__title">
-            {{ member.title }}
+            {{ project.title }}
           </h2>
         </a>
+        {% if project.body %}
+        <div class="c-modal js-modal">
+          <div class="c-modal__close js-close">&times;</div>
+          <div class="c-modal__body">
+            <div class="o-layout o-layout--center o-layout--middle">
+              <div class="o-layout__item u-8/12@tablet u-6/12@desktop">
+                <h2>{{ project.title }}</h2>
+                {{ project.body }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
       </div>
     {% endfor %}
   </div>
 </div>
 
-<section class="c-section t-light">
-  <div class="c-section__heading">
-    <h2 class="c-section__title js-top-in">
-      Newsletter
-    </h2>
-  </div>
+<div class="c-section t-light">
+  <div class="o-wrapper">
+    <div class="c-section__heading">
+      <h2 class="c-section__title js-top-in">
+        Unter&shy;stütze den Neu&shy;anfang
+      </h2>
+      <h3 class="c-section__subtitle js-top-in">
+        Tritt ein und du kannst mitwählen!
+      </h3>
+    </div>
 
-  <div class="o-layout o-layout--middle o-layout--center">
-    <div class="o-layout__item u-10/12@tablet u-8/12@desktop">
-      <form
-        action="//hiasinho.us4.list-manage.com/subscribe/post?u=de54ba8bdc45ee5a5ce01c56f&amp;id=5fad95f042"
-        method="post"
-        name="mc-embedded-subscribe-form"
-        class="validate"
-        target="_blank"
-      >
-
-        <label for="mce-EMAIL">E-Mail Adresse  <i class="fa fa-asterisk"></i></label>
-        <input type="email" value="" name="EMAIL" id="mce-EMAIL">
-
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_de54ba8bdc45ee5a5ce01c56f_5fad95f042" tabindex="-1" value="">
-        </div>
-
-        <input type="submit" value="Anmelden" name="subscribe" class="c-btn c-btn--primary">
-      </form>
+    <div class="u-align-center">
+      <a href="https://mitgliedwerden.spd.de/eintritt" class="c-btn c-btn--primary u-margin-bottom-small" target="_blank">Jetzt eintreten</a>
+      <p>
+        Hast du noch Fragen? <a href="#" class="js-smooch-open">Schreib mir einfach kurz</a>.
+      </p>
     </div>
   </div>
-</section>
-
-<section class="c-section t-light">
-  <div class="o-wrapper u-align-center">
-    <div class="c-social-list">
-      <a href="#" class="c-social-list__item"><i class="fa fa-facebook-official fa-2x"></i></a>
-      <a href="#" class="c-social-list__item"><i class="fa fa-twitter fa-2x"></i></a>
-      <a href="#" class="c-social-list__item"><i class="fa fa-instagram fa-2x"></i></a>
-    </div>
-  </div>
-</section>
+</div>

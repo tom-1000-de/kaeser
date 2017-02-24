@@ -26,3 +26,14 @@ body {
 strong {
   font-weight: bold;
 }
+
+a {
+  color: $global-action-color;
+  text-decoration: none;
+  transition: $global-transition;
+
+  &:hover {
+    color: darken($global-action-color, 10%);
+    text-decoration: underline;
+  }
+}

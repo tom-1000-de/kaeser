@@ -1,6 +1,13 @@
 .c-masthead {
   background-color: $global-primary-color;
+  background-image: url('~images/cover.jpg');
+  background-size: cover;
+  background-position: center;
   position: relative;
+
+  @include mq(desktop) {
+    background-position: right center;
+  }
 }
 
   .c-masthead__content {
@@ -25,14 +32,14 @@
     }
 
     &:before {
-      width: 90%;
-      margin-left: 5%;
+      width: 60%;
+      margin-left: 20%;
       bottom: -$inuit-global-spacing-unit-small;
     }
 
     &:after {
-      width: 80%;
-      margin-left: 10%;
+      width: 50%;
+      margin-left: 25%;
       bottom: -$inuit-global-spacing-unit;
     }
   }

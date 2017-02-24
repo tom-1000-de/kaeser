@@ -9,14 +9,70 @@
     <meta name="robots" content="NOODP">
     <link href="{{ site.assets_base_url }}style.css" rel="stylesheet" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   </head>
   <body>
+    <nav class="c-nav">
+      <div class="c-nav__action js-nav-open">
+        <i class="fa fa-ellipsis-v"></i>
+      </div>
+      <ul class="c-nav__list js-nav-list">
+        <li><a class="c-nav__item" href="/#start">Start</a></li>
+        <li><a class="c-nav__item" href="{{ site.baseurl }}{% link ueber.html %}">Über Markus</a></li>
+        <li><a class="c-nav__item" href="/#einsatz">Einsatz</a></li>
+        <li><a class="c-nav__item" href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+
     {{ content }}
 
-    <script src="https://cdn.smooch.io/smooch.min.js"></script>
-    <script>
-      Smooch.init({ appToken: 'dmr1fytsagln00be5p1enxfnd' });
-    </script>
-    <script type="text/javascript" src="{{ site.assets_base_url }}app.js"></script>
+    <section class="c-section t-light">
+      <div class="o-wrapper">
+        <div class="c-section__heading">
+          <h2 class="c-section__title js-top-in">
+            Pack mas!
+          </h2>
+          <h3 class="c-section__subtitle js-top-in">
+            Komplize werden und den Neuanfang unterstützen.
+          </h3>
+
+
+        </div>
+
+        <p class="u-align-center js-bottom-in">
+          Lasst uns gemeinsam die Sozialdemokratie wieder zu einer echten politischen Alternative machen. Helft mit, dass die SPD wieder Heimat für Sozialdemokraten sein kann.
+        </p>
+
+        <div class="o-layout o-layout--middle o-layout--center js-track-visible" data-track-category="Page" data-track-action="scroll" data-track-label="Newsletter" id="newsletter">
+          <div class="o-layout__item u-10/12@tablet u-8/12@desktop">
+            {% include newsletter.html %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="c-section t-light u-padding-bottom js-track-visible" data-track-category="Page" data-track-action="scroll" data-track-label="Bottom">
+      <div class="o-wrapper u-align-center">
+        <div class="c-social-list u-margin-bottom">
+          <a href="https://www.facebook.com/kaesermarkus" class="c-social-list__item js-track-click" target="_blank">
+            <i class="fa fa-facebook-official fa-2x"></i>
+          </a>
+          <a href="https://twitter.com/Markus_Kaeser" class="c-social-list__item js-track-click" target="_blank">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/mkaeser/" class="c-social-list__item js-track-click" target="_blank">
+            <i class="fa fa-instagram fa-2x"></i>
+          </a>
+        </div>
+
+        <div>
+          &copy; 2017 Markus Käser #1erfür60000
+          &middot; Handgemacht mit <a href="http://hiasinho.com" target="_blank"><i class="fa fa-heart u-paint-red"></i></a> in Pfaffenhofen an der Ilm
+          &middot; <a href="{{ site.baseurl }}{% link impressum.html %}">Impressum & Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+
+    {% include javascripts.html %}
   </body>
 </html>
