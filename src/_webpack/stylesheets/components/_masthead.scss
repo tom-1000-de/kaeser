@@ -24,22 +24,22 @@
     color: white;
     margin: 0;
 
-    &:before, &:after {
-      display: block;
-      content: "";
-      border-bottom: 3px solid white;
-      position: absolute;
-    }
+    // &:before, &:after {
+    //   display: block;
+    //   content: "";
+    //   border-bottom: 3px solid white;
+    //   position: absolute;
+    // }
 
-    &:before {
-      width: 60%;
-      margin-left: 20%;
-      bottom: -$inuit-global-spacing-unit-small;
-    }
+    // &:before {
+    //   width: 60%;
+    //   margin-left: 20%;
+    //   bottom: -$inuit-global-spacing-unit-small;
+    // }
 
-    &:after {
-      width: 50%;
-      margin-left: 25%;
-      bottom: -$inuit-global-spacing-unit;
-    }
+    // &:after {
+    //   width: 50%;
+    //   margin-left: 25%;
+    //   bottom: -$inuit-global-spacing-unit;
+    // }
   }

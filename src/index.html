@@ -16,7 +16,7 @@ layout: default
   <a href="#intro" class="c-scroll"></a>
 </header>
 
-<div class="c-section t-dark">
+<div class="c-section t-dark u-padding-bottom-huge">
   <div class="o-wrapperl">
     <div class="o-layout o-layout--center">
       <div class="o-layout__item u-10/12@tablet u-9/12@desktop u-6/12@wide">
@@ -24,7 +24,7 @@ layout: default
           <div class="c-letter__page">
             <p>
               Liebe Genossinnen,<br/>
-              Liebe Genossen,
+              liebe Genossen,
             </p>
 
             <p>
@@ -36,7 +36,7 @@ layout: default
             </p>
 
             <p>
-              Nun haben wir die Urwahl durchgesetzt. Jetzt schreiben alle Mitglieder die Geschichte der bayerischen Sozialdemokratie selbst!
+              Nun haben wir die Urwahl durchgesetzt.<br/>Jetzt schreiben alle Mitglieder die Geschichte der bayerischen Sozialdemokratie selbst!
             </p>
 
             <p>
@@ -54,8 +54,8 @@ layout: default
             <p>Darum kandidiere ich.</p>
 
             <p>
-              Markus Käser<br/>
-              #1erfür60000
+              Aloha<br/>
+              Markus Käser
             </p>
           </div>
           <div class="c-letter__page"></div>
@@ -70,7 +70,8 @@ layout: default
 <section class="c-section t-dark">
   <div class="c-section__heading">
     <h2 class="c-section__title js-top-in">
-      Markus Käser zum Landes&shy;vor&shy;sitzenden wählen bedeutet
+      Markus Käser zum Landes&shy;vor&shy;sitzenden wählen,<br/>
+      <span class="js-bottom-in">bedeutet:</span>
     </h2>
   </div>
 
@@ -121,7 +122,7 @@ layout: default
   <div class="o-layout o-layout--middle js-track-visible" data-track-category="Page" data-track-action="scroll" data-track-label="Projects">
     {% for project in site.data.projects %}
       <div class="o-layout__item u-6/12@tablet u-4/12@desktop">
-        <a class="c-project js-bottom-in{% if project.body %} js-there-is-more{% endif %} js-track-click" href="{{ project.url }}" target="_blank">
+        <a class="c-project js-bottom-in{% if project.body %} js-there-is-more{% endif %} js-track-click" {% if project.url %}href="{{ project.url }}" {% endif %}target="_blank">
           <div class="c-project__image" style="background-image: url('{{ site.baseurl }}assets/images/{{ project.image }}')"></div>
           <h2 class="c-project__title">
             {{ project.title }}
@@ -145,7 +146,7 @@ layout: default
   </div>
 </div>
 
-<div class="c-section t-light">
+<div class="c-section t-dark u-padding-top-huge u-padding-bottom-huge">
   <div class="o-wrapper">
     <div class="c-section__heading">
       <h2 class="c-section__title js-top-in">

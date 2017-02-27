@@ -56,7 +56,6 @@ $('.js-newsletter').submit(function(e) {
     error(err) { return alert("Could not connect to the registration server.") },
     success(data) {
       if (data.result !== "success") {
-        debugger
         $this.find('.js-newsletter-notice').html(`<p>${data.msg}</p>`)
         Analytics.track('Newsletter', 'send', 'fail')
       } else {
@@ -67,10 +66,6 @@ $('.js-newsletter').submit(function(e) {
   })
 })
 
-// $('a[href*="#"]:not([href="#"])').click(function(ev) {
-//   ev.preventDefault()
-//   this.scrollIntoView({ behavior: 'smooth' })
-// })
 
 $('.js-nav-open').on('click', function(ev) {
   ev.preventDefault()
@@ -81,7 +76,6 @@ $('.js-nav-open').on('click', function(ev) {
     $('.js-nav-list').fadeOut()
   })
 })
-
 
 $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

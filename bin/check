@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'github-pages-health-check'
+cname_path = File.expand_path "src/CNAME", Dir.pwd
+raise "No CNAME file found in current directory" unless File.exists?(cname_path)
+cname = File.open(cname_path).read.strip
+check = GitHubPages::HealthCheck.check(cname)
+puts "Checking domain #{cname}..."
+if check.valid?
+  puts "Everything looks a-okay! :)"
+  exit 0
+else
+  puts "Uh oh. Looks like something's fishy: #{check.reason}"
+  exit 1
+end

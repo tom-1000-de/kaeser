@@ -1,0 +1,37 @@
+machine:
+  node:
+    version: 6.9.2
+  environment:
+    YARN_VERSION: 0.20.3
+    PATH: "${PATH}:${HOME}/.yarn/bin:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+    RAILS_ENV: test
+    RACK_ENV: test
+    NODE_ENV: test
+
+dependencies:
+  cache_directories:
+    - ~/.yarn
+    - ~/.cache/yarn
+  pre:
+    - echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc
+    - gem install bundler
+    - |
+      if [[ ! -e ~/.yarn/bin/yarn || $(yarn --version) != "${YARN_VERSION}" ]]; then
+        echo "Download and install Yarn."
+        curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
+      else
+        echo "The correct version of Yarn is already installed."
+      fi
+  override:
+    - yarn install
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
+
+test:
+  override:
+    - bundle exec bin/check
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - bin/deploy

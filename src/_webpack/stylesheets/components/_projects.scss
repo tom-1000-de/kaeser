@@ -1,12 +1,3 @@
-.c-projects {
-
-}
-
-  .c-project__item {
-
-  }
-
-
 .c-project {
   display: block;
   width: 100%;
@@ -32,10 +23,10 @@
     height: 120px;
     padding: calc(32px/2) 32px;
     padding-bottom: 66%;
-    background-color: $global-primary-color;
+    background-color: rgba(black, 0.5);
     background-size: cover;
     background-position: center center;
-    background-blend-mode: hard-light;
+    background-blend-mode: multiply;
     outline: none;
   }
 

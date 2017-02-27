@@ -1,47 +1,57 @@
-- title: Jugendparlament entwickelt
-  image: jugendparlament_paf.jpg
-  url: http://echtland.de
-  body: |
-    <p>
-    <strong>Ziele:</strong><br/>
-    Verbindliche Mitbestimmung  von Jugendlichen auf Gemeindeebene.
-    Jugendpolitische Bildung
-    </p>
+- title: Kleiderkammer Pfaffenhofen e.V.
+  image: kleiderkammer.jpg
+  url: http://www.pafunddu.de/pfaffenhofen/soziales_bildung/jacke-wie-hose-jedes-teil-nur-ein-euro-kleiderkammer-pfaffenhofen-hilft-menschen-die-mit-begrenztem-budget-auskommen-muessen-d7304.html
 
-    <p>
-    <strong>Aktion:</strong><br/>
-    Die bayerischen Gemeindeordnung sieht keine Verpflichtung zur politischen Beteiligung von Jugendlichen vor. Auf unsere Anregung hin und nach unserem Konzept organisierte die Stadt Pfaffenhofen Wahlen von Jugendlichen ab 14 bis 26 Jahren und stattete das neue Gremium mit eigenem Budget und Räumen aus. Das Jugendparlament wird alle zwei Jahre neue gewählt und existiert in dieser Form seit 1998.
-    </p>
-- title: Anderes Projekt
-  image: p2.jpg
-  url: http://echtland.de
-- title: Super Projekt
-  image: p3.jpg
-  url: http://echtland.de
-- title: Saitensprung
-  image: p4.png
-  url: http://echtland.de
-- title: Ein Projekt
-  image: p1.jpg
-  url: http://echtland.de
-- title: Anderes Projekt
-  image: p2.jpg
-  url: http://echtland.de
-- title: Super Projekt
-  image: p3.jpg
-  url: http://echtland.de
-- title: Saitensprung
-  image: p4.png
-  url: http://echtland.de
-- title: Ein Projekt
-  image: p1.jpg
-  url: http://echtland.de
-- title: Anderes Projekt
-  image: p2.jpg
-  url: http://echtland.de
-- title: Super Projekt
-  image: p3.jpg
-  url: http://echtland.de
-- title: Saitensprung
-  image: p4.png
-  url: http://echtland.de
+- title: Landesvereinigung Bürgerenergie Bayern e.V.
+  image: bebay.jpg
+  url: http://www.be-bay.de
+
+- title: Pfaffenhofen ist “bunt”
+  image: buntespaf.jpg
+
+- title: SPD Basisinitiative “Zeit für die Mutigen”
+  image: mutigen.jpg
+  url: http://andiemutigen.de
+
+- title: “PAFundDU” Aktionsprogramm für Bürgerbeteiligung
+  image: pafunddu.jpg
+  url: http://pafunddu.de
+
+- title: Bürgerenergiegenossenschaft Pfaffenhofen eG
+  image: beg.jpg
+  url: http://beg-paf.de
+
+- title: Energie- und Solarverein Pfaffenhofen e.V
+  image: esv.jpg
+  url: http://esv-paf.de
+
+- title: Gartenschau Pfaffenhofen
+  image: gartenschau.jpg
+  url: https://www.gartenschau-pfaffenhofen.de/
+
+- title: Liveübertragung Stadtrat Pfaffenhofen
+  image: livestreampaf.jpg
+  url: http://www.pfaffenhofen.de/livestream/
+
+- title: Klimaschutzallianz Pfaffenhofen
+  image: klimaschutz.jpg
+  url: http://www.pfaffenhofen.de/klimaschutzallianz/
+
+- title: Jugendkultur- und Medienzentrum Utopia
+  image: utopia.jpg
+  url: http://utopia.stadtjugendpflege.de/
+
+- title: Direktkandidat Landtag
+  image: richtigkaeser.jpg
+
+- title: Nachhaltigkeitspreis der Stadt Pfaffenhofen
+  image: nachhaltigkeitspreis.jpg
+  url: http://www.pfaffenhofen.de/nachhaltigkeitspreis/
+
+- title: Bündnis Rückenwind
+  image: pafschaffts.jpg
+  url: https://www.youtube.com/watch?v=Fxxlu5rK_s8
+
+- title: SPD Pfaffenhofen
+  image: spdpaf.jpg
+  url: http://www.spd-pfaffenhofen.de
