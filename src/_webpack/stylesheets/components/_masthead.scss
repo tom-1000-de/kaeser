@@ -18,6 +18,9 @@
     @include inuit-font-size(72px);
     color: white;
     margin: 0;
+    border: 5px solid white;
+    padding: 16px 18px;
+    text-transform: uppercase;
   }
 
   .c-masthead__subtitle {
