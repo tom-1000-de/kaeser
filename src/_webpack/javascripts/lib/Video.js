@@ -3,16 +3,11 @@ var tag = document.createElement('script');
 var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var tv,
-    playerDefaults = {autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
+    playerDefaults = {autoplay: 0, loop: true, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
 var vid = [
       {'videoId': 'srtm1nOjCog', 'startSeconds': 0, 'suggestedQuality': 'hd720'},
     ],
-    randomVid = Math.floor(Math.random() * vid.length),
-    currVid = randomVid;
-
-$('.hi em:last-of-type').html(vid.length);
-
-
+    currVid = 0;
 
 window.onYouTubeIframeAPIReady = function onYouTubePlayerAPIReady(){
   tv = new YT.Player('tv', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
@@ -20,8 +15,6 @@ window.onYouTubeIframeAPIReady = function onYouTubePlayerAPIReady(){
 
 window.onPlayerReady = function onPlayerReady(event){
   tv.loadVideoById(vid[currVid]);
-
-
   tv.mute();
 }
 
@@ -42,6 +35,9 @@ window.onPlayerStateChange = function onPlayerStateChange(e) {
     }
     tv.loadVideoById(vid[currVid]);
     tv.seekTo(vid[currVid].startSeconds);
+
+  } else if (e.data === YT.PlayerState.ENDED) {
+    tv.playVideo();
   }
 }
 
