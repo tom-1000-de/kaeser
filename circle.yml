@@ -38,4 +38,4 @@ deployment:
   production:
     branch: master
     commands:
-      - bin/deploy
+      - bin/deploy_circleci.sh
