@@ -1,6 +1,7 @@
 import Analytics from './lib/Analytics'
 import ScrollReveal from 'scrollreveal'
 import SmoothScroll from 'smoothscroll-polyfill'
+import './lib/Video'
 
 SmoothScroll.polyfill()
 
