@@ -1,12 +1,12 @@
-- title: Kleiderkammer Pfaffenhofen e.V.
+- title: Initator Kleiderkammer Pfaffenhofen e.V.
   image: kleiderkammer.jpg
   url: http://www.pafunddu.de/pfaffenhofen/soziales_bildung/jacke-wie-hose-jedes-teil-nur-ein-euro-kleiderkammer-pfaffenhofen-hilft-menschen-die-mit-begrenztem-budget-auskommen-muessen-d7304.html
 
-- title: Landes&shy;vereinigung Bürgerenergie Bayern e.V.
+- title: Vorsitzender Landes&shy;vereinigung Bürgerenergie Bayern e.V.
   image: bebay.jpg
   url: http://www.be-bay.de
 
-- title: Pfaffenhofen ist “bunt”
+- title: Mitinitator Bündnis Pfaffenhofen ist “bunt”
   image: buntespaf.jpg
   body: |
     Ein Bündnis von Pfaffenhofener Vereinen und Organisationen gegen Nationalismus und für eine bunte Gesellschaft.
@@ -15,19 +15,19 @@
   image: mutigen.jpg
   url: http://andiemutigen.de
 
-- title: “PAFundDU”-&shy;Aktionsprogramm für Bürgerbeteiligung
+- title: Ideengeber “PAFundDU”-&shy;Aktionsprogramm für Bürger&shy;beteiligung
   image: pafunddu.jpg
   url: http://pafunddu.de
 
-- title: Bürger&shy;energie&shy;genossen&shy;schaft Pfaffenhofen eG
+- title: Gründungs&shy;mitglied Bürger&shy;energie&shy;genossen&shy;schaft Pfaffenhofen eG
   image: beg.jpg
   url: http://beg-paf.de
 
-- title: Energie- und Solarverein Pfaffenhofen e.V
+- title: Vorstand Energie- und Solar&shy;verein Pfaffen&shy;hofen e.V
   image: esv.jpg
   url: http://esv-paf.de
 
-- title: Gartenschau Pfaffenhofen
+- title: Auf&shy;sichts&shy;rat Gartenschau Pfaffen&shy;hofen
   image: gartenschau.jpg
   url: https://www.gartenschau-pfaffenhofen.de/
 
@@ -35,11 +35,11 @@
   image: livestreampaf.jpg
   url: http://www.pfaffenhofen.de/livestream/
 
-- title: Klimaschutz&shy;allianz Pfaffenhofen
+- title: Gründungs&shy;mitglied Klimaschutz&shy;allianz Pfaffenhofen
   image: klimaschutz.jpg
   url: http://www.pfaffenhofen.de/klimaschutzallianz/
 
-- title: Jugendkultur- und Medienzentrum Utopia
+- title: Aufbau Jugendkultur&shy;- und Medien&shy;zentrum Utopia
   image: utopia.jpg
   url: http://utopia.stadtjugendpflege.de/
 
@@ -52,14 +52,26 @@
     Schrobenhausen, Horst Winter: 12,5 %<br/>
     Pfaffenhofen, Markus Käser: 19,9 %<br/>
 
-- title: Nachhaltigkeitspreis der Stadt Pfaffenhofen
+- title: Nachhaltig&shy;keitspreis der Stadt Pfaffenhofen
   image: nachhaltigkeitspreis.jpg
   url: http://www.pfaffenhofen.de/nachhaltigkeitspreis/
 
-- title: Bündnis Rückenwind
+- title: Initiative Bündnis Rückenwind
   image: pafschaffts.jpg
   url: http://beg-paf.de
 
 - title: Die CSU abgelöst und eine bunte Koalition etabliert
   image: bunte_koalition_etabliert.jpg
   url: http://www.spd-pfaffenhofen.de/bunte-koaliton/
+  
+- title: Jugendparlament eingeführt
+  image:
+  url: http://jugendparlament-paf.de/
+
+-title: Einsatz für die Gesundheitsversorgung in Bürgerhand
+  image: 
+  url:  http://www.spd-pfaffenhofen.de/meldungen/ja-zur-ilmtalklinik-ohne-wenn-und-aber-privatisierung-oder-verkauf-kommt-fuer-uns-nicht-in-frage/
+
+- title: Initiative für nachhaltiges Schulessen
+  image:
+  url: http://www.spd-pfaffenhofen.de/meldungen/besseresser-unsere-schulverpflegung-fit-fuer-die-zukunft-machen/
