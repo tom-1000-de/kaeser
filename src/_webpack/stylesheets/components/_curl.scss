@@ -1,0 +1,49 @@
+.c-curl {
+  $size: 100px;
+  position: fixed;
+  background-color: $global-primary-color;
+  background-image: url('~images/planb.svg');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -0;
+  left: 0;
+  width: $size;
+  height: $size;
+  overflow: hidden;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 1px 0 rgba(30, 30, 32, 0.2) inset,
+              0 8px 16px rgba(0, 0, 0, 0.5);
+
+  &:hover,
+  &:focus {
+    $size: 150px;
+    width: $size;
+    height: $size;
+  }
+
+  span {
+    display: none;
+  }
+
+  @include mq(tablet) {
+    $size: 150px;
+    width: $size;
+    height: $size;
+
+    &:hover,
+    &:focus {
+      $size: 300px;
+      width: $size;
+      height: $size;
+    }
+  }
+}
+
+  .c-curl__content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
